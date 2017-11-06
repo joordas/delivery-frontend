@@ -1,0 +1,8 @@
+public/bundle.js
+node_modules/
+.eslintcache
+.DS_Store
+publick/*bundle*
+*.map
+*.bundle.js
+.sass-cache/
