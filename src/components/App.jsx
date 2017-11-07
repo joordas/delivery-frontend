@@ -1,13 +1,22 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
+// components:
+import Homepage from "./Homepage";
+import Navbar from "./Navbar";
+import SignUp from "./SignUp";
+import Login from "./Login";
 
 const App = props => (
-  <div>
-    <h1>Hello from {props.title}</h1>
-  </div>
-);
+  <Router>
+    <div>
+      <Navbar />
+      <Route exact path="/" component={Homepage} />
 
-App.defaultProps = {
-  title: "react"
-};
+      <Route exact path="/signup" component={SignUp} />
+      <Route exact path="/login" component={Login} />
+    </div>
+  </Router>
+);
 
 export default App;

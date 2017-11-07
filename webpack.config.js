@@ -1,4 +1,5 @@
 const path = require("path");
+const webpack = require("webpack");
 
 module.exports = {
   context: __dirname,
@@ -18,6 +19,7 @@ module.exports = {
     chunks: true
   },
   devServer: {
+    hot: true,
     publicPath: "/public/",
     historyApiFallback: true
   },
@@ -28,5 +30,9 @@ module.exports = {
         loader: "babel-loader"
       }
     ]
-  }
+  },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NamedModulesPlugin()
+  ]
 };

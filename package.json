@@ -11,6 +11,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "node-sass": "^4.6.0",
+    "sass-loader": "^6.0.6",
     "webpack": "^3.8.1",
     "webpack-dev-server": "^2.9.4"
   },
@@ -21,6 +23,8 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.0.0",
+    "react-router-dom": "^4.2.2",
+    "styled-components": "^2.2.3"
   }
 }
